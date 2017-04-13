@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-body{
+body {
 	font-family: sans-serif;
 }
 
@@ -12,19 +12,19 @@ h2 {
     font-size: 18px;
 }
 
-p{
+p {
 	margin-top: 0;
 	margin-bottom: 0;
 }
-.info{
+.info {
 	list-style-type: none;
 }
 
-.profile{
+.profile {
 	padding: 16px;
 	border: 1px solid #095cdc;
 }
-.profile  h2{
+.profile h2 {
     margin-top: 0;
     margin-bottom: 0;
 }
