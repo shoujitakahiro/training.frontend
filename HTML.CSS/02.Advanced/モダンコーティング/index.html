@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="モダンコーティング研修">
-<title>demo研修</title>
+<meta name="description" content="モダンコーディング研修">
+<title>モダンコーディング研修</title>
 <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -13,8 +13,8 @@
 		<p>Web designer's portfolio</p>
 		<h1>HI, MY NAME IS...</h1>
 		<p>Check out some of my works.</p>
-		<a href="#555">LEARN MORE</a>
-		<a href="#666">SEND MESSAGE</a>
+		<a href="#worksLink">LEARN MORE</a>
+		<a href="#contactLink">SEND MESSAGE</a>
 	</header>
 	<section>
 		<h2>ABOUT ME</h2>
@@ -24,8 +24,8 @@
 		このサンプルのようなサイトをいちから作る過程を通して、HTMLとCSSの実践的なコーディングノウハウを学ぶことが</p>
 	</section>
 
-	<div class="works">
-		<h2 id="555">WORKS</h2>
+	<section class="works">
+		<h2 id="worksLink">WORKS</h2>
 		<ul>
 			<li>
 				<img src="http://www.shoeisha.com/book/hp/mcoding/3/images/tree.jpg" alt="tree">
@@ -33,7 +33,7 @@
 					ひとつめの制作事例が入ります。<br>
 					簡単な説明が入ります。<br>
 					使用ツール：XXX, XXX, XXX<br>
-					<a href="">READ MORE</a>
+					<a href="#">READ MORE</a>
 				</p>
 			</li>
 
@@ -43,7 +43,7 @@
 					ふたつめの制作事例が入ります。<br>
 					簡単な説明が入ります。<br>
 					使用ツール：XXX, XXX, XXX<br>
-					<a href="">READ MORE</a>
+					<a href="#">READ MORE</a>
 				</p>
 			</li>
 
@@ -53,7 +53,7 @@
 					みっつめの制作事例が入ります。<br>
 					簡単な説明が入ります。<br>
 					使用ツール：XXX, XXX, XXX<br>
-					<a href="">READ MORE</a>
+					<a href="#">READ MORE</a>
 				</p>
 			</li>
 
@@ -63,11 +63,11 @@
 					よっつめの制作事例が入ります。<br>
 					簡単な説明が入ります。<br>
 					使用ツール：XXX, XXX, XXX<br>
-					<a href="">READ MORE</a>
+					<a href="#">READ MORE</a>
 				</p>
 			</li>
 		</ul>
-	</div>
+	</section>
 
 	<section class="mySkills">
 		<h2>MY SKILLS</h2>
@@ -93,24 +93,22 @@
 					<p>CODING</p><p>HTML/CSSコーディングも行います。<br>正しく美しいマークアップと、<br>今後の変更への強さを考慮しています。</p></li>
 		</ul>
 	</section>
-	<div class="contact">
-		<h2 id="666">CONTACT</h2>
+	<section class="contact">
+		<h2 id="contactLink">CONTACT</h2>
 		<form action="#">
 			<p>
 				<input type="text" name="name" placeholder="NAME">
 			</p>
+			<p>
+				<textarea name="comment" placeholder="MESSAGE"></textarea>
+			</p>
+			<p>
+				<input type="submit" name="submit" value="SEND" id="submit">
+			</p>
 		</form>
-		<p>
-			<textarea name="comment" placeholder="MESSAGE"></textarea>
-		</p>
-		<form action="#">
-			<p><input type="submit" name="submit" value="SEND" id="submit"></p>
-		</form>
-	</div>
+	</section>
 	<footer>
-		<p>
-			&copy; sample site
-		</p>
+		<p><small>&copy; sample site</small></p>
 	</footer>
 </body>
 </html>
