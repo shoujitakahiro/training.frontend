@@ -4,7 +4,7 @@
 	margin: 0;
 	padding: 0;
 	text-align: center;
-	font-family: Raleway, "Hiragino Kaku Gothic ProN",  Meiryo,  sans-serif;
+	font-family: Raleway, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 	line-height: 2.5;
 }
 
@@ -24,11 +24,10 @@ ul {
 
 header {
 	background-color: #000000;
-	height: 750px;
 }
 header p {
 	color: #666;
-	padding-bottom: 120px;
+	padding-bottom: 80px;
 }
 
 .subutitle {
@@ -52,7 +51,7 @@ header p {
 .subutitle::after {
 	border-top: 1px solid;
     content: "";
-    display: inline;
+    display: block;
     -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
     -ms-flex: 1;
@@ -70,6 +69,7 @@ header a {
 	display: inline-block;
 	width: 180px;
 	padding: 20px;
+	margin-bottom: 80px;
 	color: #fff;
 	background: #afa58d;
 	border-radius: 6px;
@@ -84,20 +84,21 @@ header > a+a {
 
 
 section {
-	height: 600px;
+
 }
 
 section h2 {
 	font-size: 40px;
-	padding-top: 200px;
+	padding-top: 100px;
 	padding-bottom: 20px;
 }
 section > p+p {
 	margin-top: 20px;
+	margin-bottom: 100px;
 }
 
-.works {
-	background: #383634;
+section.works {
+	background-color: #383634;
 }
 
 
