@@ -11,7 +11,7 @@
 h1 {
 	font-size: 70px;
 	color:#fff;
-	padding: 30px 0 30px 0;
+	padding: 5px 0 0 0;
 }
 
 h2 {
@@ -99,6 +99,14 @@ section > p+p {
 
 section.works {
 	background-color: #383634;
+}
+section.works h2 {
+	color: #fff;
+}
+ul {
+	display: inline;
+	display: flex;
+	flex-flow; ;
 }
 
 
