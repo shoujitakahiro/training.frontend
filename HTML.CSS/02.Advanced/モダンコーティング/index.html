@@ -13,11 +13,11 @@
 	<header>
 		<p class="subutitle">Web designer's portfolio</p>
 		<h1>HI, MY NAME IS...</h1>
-		<p>Check out some of my works.</p>
+		<p class="checkOut">Check out some of my works.</p>
 		<a href="#worksLink">LEARN MORE</a>
 		<a href="#contactLink">SEND MESSAGE</a>
 	</header>
-	<section>
+	<section class="about">
 		<h2><span style="border-bottom: double; border-width: 6px;padding-bottom: 0px;border-color: #333;">ABOUT ME</span></h2>
 		<p>はじめまして。日本でWebデザイナーをしています。<br>
 		デザインの専門学校を卒業し、制作会社での業務経験を経て、現在はフリーランスとして働いています。</p>
@@ -29,78 +29,91 @@
 		<h2 id="worksLink"><span style="border-bottom: double; border-width: 6px;padding-bottom: 0px;border-color: #fff;">WORKS</span></h2>
 		<ul>
 			<li>
-				<img src="http://www.shoeisha.com/book/hp/mcoding/3/images/tree.jpg" alt="tree">
-				<p class="scroll">
-					ひとつめの制作事例が入ります。<br>
-					簡単な説明が入ります。<br>
-					使用ツール：XXX, XXX, XXX<br>
-					<a href="#">READ MORE</a>
-				</p>
+				<div class="backimage1">
+					<div class="photo">
+						<img src="http://www.shoeisha.com/book/hp/mcoding/3/images/tree.jpg" alt="tree">
+						<p class="scroll1">
+							ひとつめの制作事例が入ります。<br>
+							簡単な説明が入ります。<br>
+							使用ツール：XXX, XXX, XXX<br>
+							<a href="#">READ MORE</a>
+						</p>
+					</div>
+				</div>
 			</li>
 
 			<li>
-				<img src="http://www.shoeisha.com/book/hp/mcoding/3/images/building.jpg" alt="building">
-				<p class="scroll">
-					ふたつめの制作事例が入ります。<br>
-					簡単な説明が入ります。<br>
-					使用ツール：XXX, XXX, XXX<br>
-					<a href="#">READ MORE</a>
-				</p>
+				<div class="backimage2">
+					<div class="photo">
+						<img class=imgOdd src="http://www.shoeisha.com/book/hp/mcoding/3/images/building.jpg" alt="building">
+						<p class="scroll2">
+							ふたつめの制作事例が入ります。<br>
+							簡単な説明が入ります。<br>
+							使用ツール：XXX, XXX, XXX<br>
+							<a href="#">READ MORE</a>
+						</p>
+					</div>
+				</div>
 			</li>
 
 			<li>
-				<img src="http://www.shoeisha.com/book/hp/mcoding/3/images/lake.jpg" alt="lake">
-				<p class="scroll">
-					みっつめの制作事例が入ります。<br>
-					簡単な説明が入ります。<br>
-					使用ツール：XXX, XXX, XXX<br>
-					<a href="#">READ MORE</a>
-				</p>
+				<div class="backimage3">
+					<div class="photo">
+						<img src="http://www.shoeisha.com/book/hp/mcoding/3/images/lake.jpg" alt="lake">
+						<p class="scroll3">
+							みっつめの制作事例が入ります。<br>
+							簡単な説明が入ります。<br>
+							使用ツール：XXX, XXX, XXX<br>
+							<a href="#">READ MORE</a>
+						</p>
+					</div>
+				</div>
 			</li>
 
 			<li>
-				<img src="http://www.shoeisha.com/book/hp/mcoding/3/images/sky.jpg" alt="sky">
-				<p class="scroll">
-					よっつめの制作事例が入ります。<br>
-					簡単な説明が入ります。<br>
-					使用ツール：XXX, XXX, XXX<br>
-					<a href="#">READ MORE</a>
-				</p>
+				<div class="backimage4">
+					<div class="photo">
+						<img class=imgOdd src="http://www.shoeisha.com/book/hp/mcoding/3/images/sky.jpg" alt="sky">
+						<p class="scroll4">
+							よっつめの制作事例が入ります。<br>
+							簡単な説明が入ります。<br>
+							使用ツール：XXX, XXX, XXX<br>
+							<a href="#">READ MORE</a>
+						</p>
+					</div>
+				</div>
 			</li>
 		</ul>
 	</section>
 
 	<section class="mySkills">
-		<h2>MY SKILLS</h2>
+		<h2><span style="border-bottom: double; border-width: 6px;padding-bottom: 0px;border-color: #333;">MY SKILLS</span></h2>
 		<ul>
 			<li>
 				<span class="fa-stack">
-					<i class="fa fa-stack-2x fa-circle-o"></i>
 					<i class="fa fa-stack-1x fa-lightbulb-o"></i>
 				</span>
-				<p>IDEA</p><p>何かを考えることが好きです。<br>新しいことを思いついては試しています。<br>ディレクションの経験もあります。</p>
+				<p class="myskillsP">IDEA</p><p class="myskillsP2">何かを考えることが好きです。<br>新しいことを思いついては試しています。<br>ディレクションの経験もあります。</p>
 			</li>
 			<li>
 				<span class="fa-stack">
-					<i class="fa fa-stack-2x fa-circle-o"></i>
 					<i class="fa fa-stack-1x fa-paint-brush"></i>
 				</span>
-					<p>DESIGN</p><p>見た目の綺麗さだけじゃなくて、<br>使いやすさ、情報の伝わりやすさなど、<br>その先まで考えることを意識しています。</p></li>
+					<p class="myskillsP">DESIGN</p><p class="myskillsP2">見た目の綺麗さだけじゃなくて、<br>使いやすさ、情報の伝わりやすさなど、<br>その先まで考えることを意識しています。</p></li>
 			<li>
 				<span class="fa-stack">
-					<i class="fa fa-stack-2x fa-circle-o"></i>
 					<i class="fa fa-stack-1x fa-code"></i>
 				</span>
-					<p>CODING</p><p>HTML/CSSコーディングも行います。<br>正しく美しいマークアップと、<br>今後の変更への強さを考慮しています。</p>
+					<p class="myskillsP">CODING</p><p class="myskillsP2">HTML/CSSコーディングも行います。<br>正しく美しいマークアップと、<br>今後の変更への強さを考慮しています。</p>
 			</li>
 		</ul>
 	</section>
 	<section class="contact">
-		<h2 id="contactLink">CONTACT</h2>
+		<h2 id="contactLink"><span style="border-bottom: double; border-width: 6px;padding-bottom: 0px;border-color: #333;">CONTACT</span></h2>
 		<form action="#">
-				<input type="text" name="name" placeholder="NAME">
-				<textarea name="comment" placeholder="MESSAGE"></textarea>
-				<input type="submit" name="submit" value="SEND" id="submit">
+			<input type="text" name="name" placeholder="NAME">
+			<textarea name="comment" placeholder="MESSAGE"></textarea>
+			<input type="submit" name="submit" value="SEND" id="submit">
 		</form>
 	</section>
 	<footer>

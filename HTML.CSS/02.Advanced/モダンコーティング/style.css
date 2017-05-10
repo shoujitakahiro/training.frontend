@@ -4,18 +4,33 @@
 	margin: 0;
 	padding: 0;
 	text-align: center;
-	font-family: Raleway, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-	line-height: 2.5;
+	font-family: Raleway,
+	"Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+	box-sizing: border-box;
+}
+
+body {
+	background: url("http://www.shoeisha.com/book/hp/mcoding/3/images/bg.png");
+	background-repeat: no-repeat;
+	background-position: 0% 50%;
+	background-attachment:fixed;
+	background-size: cover;
+	box-sizing: border-box;
 }
 
 h1 {
 	font-size: 70px;
 	color:#fff;
-	padding: 5px 0 0 0;
+	margin: 50px 0 40px;
+}
+
+.checkOut {
+	margin-bottom: 50px;
 }
 
 h2 {
 	font-size: 4rem;
+	padding-bottom: 50px;
 }
 
 ul {
@@ -23,45 +38,30 @@ ul {
 }
 
 header {
-	background-color: #000000;
+	padding: 170px 30px 0;;
+	width: 100%;
 }
+
 header p {
 	color: #666;
-	padding-bottom: 80px;
 }
 
 .subutitle {
+	margin: 0 0 30px;
+	letter-spacing: 1px;
+	font-size: 1.4rem;
 	color: #fff;
-	font-size: 25px;
-	padding: 150px 0 0 0;
-	width: 600px;
-	margin: auto;
-	display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    text-align: center;
 }
 
 .subutitle::before,
 .subutitle::after {
-	border-top: 1px solid;
-    content: "";
-    display: block;
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-    -ms-flex: 1;
-    flex-grow: 1;
-}
-.subutitle::before {
-	margin-right: 1.5em;
-}
-.subutitle::after {
-	margin-left: 1.5em;
+	content: '';
+	display: inline-block;
+	width: 140px;
+	height: 2px;
+	margin: 0 30px;
+	background-color: #fff;
+	vertical-align: middle;
 }
 
 
@@ -75,54 +75,374 @@ header a {
 	border-radius: 6px;
 	font-size: 12px;
 	text-decoration: none;
+	margin-left: 20px;
 }
 
 header > a+a {
-	margin-left: 20px;
 	background: #D29E04;
 }
 
 
-section {
-
+section.about {
+	padding: 80px 30px;
+	background-color: #fff;
 }
 
 section h2 {
 	font-size: 40px;
-	padding-top: 100px;
-	padding-bottom: 20px;
 }
-section > p+p {
+section.about p {
+	line-height: 2.5;
+	margin: 30px 0;
+}
+
+section.about > p+p {
 	margin-top: 20px;
-	margin-bottom: 100px;
+	margin-bottom: 40px;
 }
 
 section.works {
 	background-color: #383634;
+	padding: 50px 0 50px 0;
+	height: 900px;
 }
 section.works h2 {
 	color: #fff;
 }
 ul {
-	display: inline;
 	display: flex;
-	flex-flow; ;
+	margin: auto;
+	justify-content: center;
+	position: relative;
+}
+
+
+img {
+	display: block;
+	width: 100%;
+	border: 0;
+	margin: 60% 0 0;
+}
+
+.photo:nth-child(odd) .imgOdd {
+	display: block;
+	width: 100%;
+	border: 0;
+	margin: 0 0 60%;
+}
+
+.backimage1{
+	position: absolute;
+	display: block;
+	left: 0;
+}
+.backimage1::after {
+	content: "";
+	background-image: url("http://www.shoeisha.com/book/hp/mcoding/3/images/tree.jpg");
+	top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    opacity: 0.2;
+    transform: scaleY(-1);
+    position: absolute;
+    display: block;
+}
+.backimage2 {
+	position: absolute;
+	display: block;
+	left: 500px;
+}
+
+.backimage2::after {
+	content: "";
+	background: url("http://www.shoeisha.com/book/hp/mcoding/3/images/building.jpg");
+	top: 300px;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    opacity: 0.2;
+    transform: scaleY(-1);
+    position: absolute;
+    display: block;
 }
 
 
 
 
+.backimage3 {
+	position: absolute;
+	display: block;
+	left: 1000px;
+}
+
+.backimage3::after {
+	content: "";
+	background: url("http://www.shoeisha.com/book/hp/mcoding/3/images/lake.jpg");
+	top: 0px;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    opacity: 0.2;
+    transform: scaleY(-1);
+    position: absolute;
+    display: block;
+}
 
 
+.backimage4 {
+	position: absolute;
+	display: block;
+	left: 1500px;
+}
+
+.backimage4::after {
+	content: "";
+	background: url("http://www.shoeisha.com/book/hp/mcoding/3/images/lake.jpg");
+	top: 300px;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    opacity: 0.2;
+    transform: scaleY(-1);
+    position: absolute;
+    display: block;
+}
+
+.scroll1 {
+	color: #ffffff;
+	overflow-y: scroll;
+	box-sizing: border-box;
+	font-size: 12px;
+	padding: 20px;
+	line-height: 3;
+	position: absolute;
+	top: 6%;
+	left: 3%;
+}
+
+.scroll2 {
+	color: #ffffff;
+	overflow-y: scroll;
+	box-sizing: border-box;
+	font-size: 12px;
+	padding: 20px;
+	line-height: 3;
+	position: absolute;
+	top: 50%;
+	left: 29%;
+}
+
+.scroll3 {
+	color: #ffffff;
+	overflow-y: scroll;
+	box-sizing: border-box;
+	font-size: 12px;
+	padding: 20px;
+	line-height: 3;
+	position: absolute;
+	top: 5%;
+}
+
+.scroll4 {
+	color: #ffffff;
+	overflow-y: scroll;
+	box-sizing: border-box;
+	font-size: 12px;
+	padding: 20px;
+	line-height: 3;
+	position: absolute;
+	top: 50%;
+	left: 80%;
+}
+
+.fa-stack {
+	color: #f1b400;
+	font-size: 5rem;
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	border: 4px solid #f1b400;
+}
+
+.mySkills {
+	background-color: #FFF;
+	padding: 80px 0;
+}
+
+.mySkills h2 {
+	padding-bottom: 15px;
+	letter-spacing: 2px;
+	padding-bottom: 50px;
+	letter-spacing: 2px;
+}
+
+.myskillsP {
+	margin: 20px 0 20px 0;
+}
+
+.myskillsP2 {
+	line-height: 2;
+	font-size: 14px;
+}
+
+.contact {
+	padding: 50px 0 50px 0;
+}
+
+.contact h2 {
+	color: #fff;
+}
+
+form {
+	padding: 50px 150px 50px 150px;
+}
+
+input[type="text"] {
+	margin-bottom: 10px;
+	width: 100%;
+	text-align: left;
+	font-size: 16px;
+	box-sizing: border-box;
+	padding: 10px 0 10px 0;
+	border:1px solid #444;
+	background: #fff;
+}
+
+textarea {
+	display: block;
+	text-align: left;
+	width: 100%;
+	box-sizing: border-box;
+	height: 150px;
+	font-size: 16px;
+	margin: auto;
+}
+
+input[type="submit"] {
+	margin-top: 20px;
+	font-size: 16px;
+	width: 200px;
+	padding: 15px;
+	border-radius: 5px;
+}
 
 
+#contactLink {
+	padding: 0;
+}
+
+@media only screen and (max-width: 768px) {
+
+	header {
+		padding-top: 60px;
+	}
 
 
+	.subutitle {
+		font-size: 1.7em;
+		padding: 0.75em 0;
+	}
+	.subutitle::before,
+	.subutitle::after {
+		display: block;
+		width: 80%;
+		margin: 10px auto;
+	}
+	.subutitle:before , .site-title-sub::after {
+		content: '';
+		border-top: 1px;
+		margin: 0 30px;
+		background-color: #fff;
+		vertical-align: middle;
+	}
+
+	header {
+		background: #000;
+	}
 
 
+	ul {
+		flex-direction: column;
+		position: relative;
+	}
+	li img {
+		height: 100px;
+		margin: 0;
+	}
+	section.works {
+		padding-bottom: 387px;
+	}
+
+	.scroll1 {
+		width: 100%;
+		background-repeat: no-repeat;
+		background: url("http://www.shoeisha.com/book/hp/mcoding/3/images/tree.jpg");
+		background-size: cover;
+		position: absolute;
+		top: 0;
+		margin: 0;
+		left: 0;
+	}
+	.scroll2 {
+		width: 100%;
+		background-repeat: no-repeat;
+		background: url("http://www.shoeisha.com/book/hp/mcoding/3/images/building.jpg");
+		background-size: cover;
+		position: absolute;
+		top: 184px;
+		left: 0;
+	}
+	.scroll3 {
+		width: 100%;
+		background-repeat: no-repeat;
+		background: url("http://www.shoeisha.com/book/hp/mcoding/3/images/lake.jpg");
+		background-size: cover;
+		position: absolute;
+		top: 368px;
+		left: 0;
+	}
+	.scroll4 {
+		width: 100%;
+		background-repeat: no-repeat;
+		background: url("http://www.shoeisha.com/book/hp/mcoding/3/images/sky.jpg");
+		background-size: cover;
+		position: absolute;
+		top: 552px;
+		left: 0;
+	}
+
+	.mySkills li {
+		margin: 30px 0;
+	}
+
+	.fa-stack {
+		color: #f1b400;
+		font-size: 3rem;
+		border-radius: 50%;
+		width: 100px;
+		height: 100px;
+		border: 4px solid #f1b400;
+	}
+	.contact {
+		background: #000;
+	}
+
+	footer {
+		background: #000;
+		color: #fff;
+	}
 
 
-
+}
 
 
 
