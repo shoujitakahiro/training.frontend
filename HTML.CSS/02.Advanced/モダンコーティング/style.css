@@ -1,267 +1,318 @@
 @charset "utf-8";
-
-* {
+body, div, p,  ul, ol, li, dl, dt, dd, table, th ,td, img, figure,
+h1, h2, h3 ,h4 ,h5, h6, form, select {
 	margin: 0;
 	padding: 0;
-	text-align: center;
-	font-family: Raleway,
-	"Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-	box-sizing: border-box;
 }
 
 body {
-	background: url("http://www.shoeisha.com/book/hp/mcoding/3/images/bg.png");
+}
+
+
+ul,
+ol		{ list-style: none; }
+
+img		{ border: 0; vertical-align: middle; width: 100%; height: auto; }
+
+
+svg,
+input,
+select,
+textarea,
+label	{ vertical-align: middle; }
+
+
+table	{ border-collapse: collapse; }
+
+
+*,
+*:before,
+*:after {
+	word-break: break-all;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+pre	 {
+	white-space: pre-wrap;
+}
+
+
+main, article, aside, figcaption, figure,
+footer, header, nav, section, details, summary {
+	display: block;
+}
+
+address {
+	font-style: normal;
+}
+
+
+html {
+}
+html {
+	line-height: 1.7;
+	font-size: 14px;
+	-webkit-text-size-adjust: 100%;
+}
+body {
+	-webkit-font-smoothing: antialiased;
+}
+html, input, select, textarea {
+	color: #212121;
+}
+input, textarea {
+	font-size: 100%;
+}
+select {
+	font-size: 16px;
+	font-size: 1.2rem;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+strong, em, small {
+	font-weight: inherit;
+}
+
+
+
+
+
+
+
+body {
+	background-image: url("http://www.shoeisha.com/book/hp/mcoding/3/images/bg.png");
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: 0% 50%;
 	background-attachment:fixed;
-	background-size: cover;
-	box-sizing: border-box;
+	font-family: Raleway;
 }
 
-h1 {
-	font-size: 70px;
-	color:#fff;
-	margin: 50px 0 40px;
-}
-
-.checkOut {
-	margin-bottom: 50px;
-}
-
-h2 {
-	font-size: 4rem;
-	padding-bottom: 50px;
-}
-
-ul {
-	list-style-type: none;
-}
 
 header {
-	padding: 170px 30px 0;;
-	width: 100%;
+	color: #fff;
+	padding: 130px 30px 80px;
+	text-align: center;
+}
+
+.subtitle {
+	font-size: 1.4rem;
+	text-align: center;
+	color: #fff;
+}
+
+.subtitle:before,
+.subtitle:after {
+	content: '';
+    display: inline-block;
+    width: 140px;
+    height: 2px;
+    margin: 0 30px;
+    background-color: #fff;
+    vertical-align: middle;
+}
+
+header h1 {
+	text-align: center;
+	font-size: 70px;
+	margin-top: 30px;
 }
 
 header p {
-	color: #666;
+	text-align: center;
+	color: #888;
+	margin-top: 30px;
 }
-
-.subutitle {
-	margin: 0 0 30px;
-	letter-spacing: 1px;
-	font-size: 1.4rem;
-	color: #fff;
-}
-
-.subutitle::before,
-.subutitle::after {
-	content: '';
-	display: inline-block;
-	width: 140px;
-	height: 2px;
-	margin: 0 30px;
-	background-color: #fff;
-	vertical-align: middle;
-}
-
 
 header a {
+	font-size: 16px;
+	border-radius: 5px;
 	display: inline-block;
+	height: 50px;
 	width: 180px;
-	padding: 20px;
-	margin-bottom: 80px;
 	color: #fff;
-	background: #afa58d;
-	border-radius: 6px;
-	font-size: 12px;
+	background-color: #afa58d;
 	text-decoration: none;
-	margin-left: 20px;
+	margin: 50px 8px 0 8px;
+	text-align: center;
+	padding-top: 12px;
 }
 
 header > a+a {
-	background: #D29E04;
+	background-color: #D29E04;
 }
 
 
-section.about {
-	padding: 80px 30px;
+
+
+
+
+
+.about {
 	background-color: #fff;
+	padding: 80px 30px 80px 30px;
 }
 
-section h2 {
-	font-size: 40px;
-}
-section.about p {
-	line-height: 2.5;
-	margin: 30px 0;
+.about h2 {
+	font-size: 35px;
+	text-align: center;
 }
 
-section.about > p+p {
+.about p {
+	text-align: center;
+	line-height: 3;
+}
+
+.about > p + p {
 	margin-top: 20px;
-	margin-bottom: 40px;
 }
 
-section.works {
-	background-color: #383634;
-	padding: 50px 0 50px 0;
-	height: 900px;
+
+
+
+
+
+
+.works {
+	background-color: rgb(56,54,52);
+	padding: 80px 0 80px 0;
 }
-section.works h2 {
+.works h2 {
+	text-align: center;
+	font-size: 35px;
 	color: #fff;
 }
-ul {
-	display: flex;
-	margin: auto;
-	justify-content: center;
-	position: relative;
+
+.works p {
+	color: #fff;
 }
 
-
+.works ul {
+	display: flex;
+}
 img {
-	display: block;
-	width: 100%;
-	border: 0;
 	margin: 60% 0 0;
 }
-
-.photo:nth-child(odd) .imgOdd {
-	display: block;
-	width: 100%;
-	border: 0;
+.imgOdd {
 	margin: 0 0 60%;
 }
 
-.backimage1{
-	position: absolute;
-	display: block;
-	left: 0;
+.works li {
+	position: relative;
 }
-.backimage1::after {
+.works-after-img1:after {
 	content: "";
-	background-image: url("http://www.shoeisha.com/book/hp/mcoding/3/images/tree.jpg");
+	background-image: url(http://www.shoeisha.com/book/hp/mcoding/3/images/tree.jpg);
+	width: 100%;
+	height: 50%;
+	background-size: cover;
+	position: absolute;
 	top: 0;
-    left: 0;
-    width: 100%;
-    height: 50%;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    opacity: 0.2;
-    transform: scaleY(-1);
-    position: absolute;
-    display: block;
-}
-.backimage2 {
-	position: absolute;
-	display: block;
-	left: 500px;
+	left: 0;
+	transform: scaleY(-1);
+	opacity: 0.2;
 }
 
-.backimage2::after {
+.works-after-img2:after {
 	content: "";
-	background: url("http://www.shoeisha.com/book/hp/mcoding/3/images/building.jpg");
-	top: 300px;
-    left: 0;
-    width: 100%;
-    height: 50%;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    opacity: 0.2;
-    transform: scaleY(-1);
-    position: absolute;
-    display: block;
-}
-
-
-
-
-.backimage3 {
-	position: absolute;
-	display: block;
-	left: 1000px;
-}
-
-.backimage3::after {
-	content: "";
-	background: url("http://www.shoeisha.com/book/hp/mcoding/3/images/lake.jpg");
-	top: 0px;
-    left: 0;
-    width: 100%;
-    height: 50%;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    opacity: 0.2;
-    transform: scaleY(-1);
-    position: absolute;
-    display: block;
-}
-
-
-.backimage4 {
-	position: absolute;
-	display: block;
-	left: 1500px;
-}
-
-.backimage4::after {
-	content: "";
-	background: url("http://www.shoeisha.com/book/hp/mcoding/3/images/lake.jpg");
-	top: 300px;
-    left: 0;
-    width: 100%;
-    height: 50%;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    opacity: 0.2;
-    transform: scaleY(-1);
-    position: absolute;
-    display: block;
-}
-
-.scroll1 {
-	color: #ffffff;
-	overflow-y: scroll;
-	box-sizing: border-box;
-	font-size: 12px;
-	padding: 20px;
-	line-height: 3;
-	position: absolute;
-	top: 6%;
-	left: 3%;
-}
-
-.scroll2 {
-	color: #ffffff;
-	overflow-y: scroll;
-	box-sizing: border-box;
-	font-size: 12px;
-	padding: 20px;
-	line-height: 3;
+	background-image: url(http://www.shoeisha.com/book/hp/mcoding/3/images/building.jpg);
+	width: 100%;
+	height: 50%;
+	background-size: cover;
 	position: absolute;
 	top: 50%;
-	left: 29%;
+	left: 0;
+	transform: scaleY(-1);
+	opacity: 0.2;
 }
-
-.scroll3 {
-	color: #ffffff;
-	overflow-y: scroll;
-	box-sizing: border-box;
-	font-size: 12px;
-	padding: 20px;
-	line-height: 3;
+.works-after-img3:after {
+	content: "";
+	background-image: url(http://www.shoeisha.com/book/hp/mcoding/3/images/lake.jpg);
+	width: 100%;
+	height: 50%;
+	background-size: cover;
 	position: absolute;
-	top: 5%;
+	top: 0;
+	left: 0;
+	transform: scaleY(-1);
+	opacity: 0.2;
 }
-
-.scroll4 {
-	color: #ffffff;
-	overflow-y: scroll;
-	box-sizing: border-box;
-	font-size: 12px;
-	padding: 20px;
-	line-height: 3;
+.works-after-img4:after {
+	content: "";
+	background-image: url(http://www.shoeisha.com/book/hp/mcoding/3/images/sky.jpg);
+	width: 100%;
+	height: 50%;
+	background-size: cover;
 	position: absolute;
 	top: 50%;
-	left: 80%;
+	left: 0;
+	transform: scaleY(-1);
+	opacity: 0.2;
+}
+
+.works p {
+	position: absolute;
+	width: 100%;
+	padding: 10px;
+	height: 41%;
+	top: 4%;
+	left: 8%;
+	z-index: 1;
+	line-height: 2;
+	overflow-y: scroll;
+	box-sizing: border-box;
+}
+
+.works .pOdd {
+	position: absolute;
+	top: 53%;
+	left: 5%;
+	z-index: 1;
+	padding: 10px;
+	line-height: 2;
+}
+
+.works p a {
+	text-align: center;
+	display: block;
+}
+
+.works .label {
+	margin-top: 20px;
+	width: 150px;
+    border-radius: 4px;
+    background-color: #afa58d;
+    color: #fff;
+    padding: 3px;
+    margin: auto;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 12px;
+    border: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+
+
+
+
+
+.mySkills {
+	background-color: #fff;
+	text-align: center;
+	padding: 80px 0;
+}
+
+.mySkills ul {
+	display: flex;
+	justify-content: center;
+	padding: 40px 0;
+}
+.mySkills h2 {
+	font-size: 35px;
 }
 
 .fa-stack {
@@ -273,35 +324,24 @@ img {
 	border: 4px solid #f1b400;
 }
 
-.mySkills {
-	background-color: #FFF;
-	padding: 80px 0;
+.mySkills li {
+	padding: 0 30px 0 30px;
 }
 
-.mySkills h2 {
-	padding-bottom: 15px;
-	letter-spacing: 2px;
-	padding-bottom: 50px;
-	letter-spacing: 2px;
-}
-
-.myskillsP {
-	margin: 20px 0 20px 0;
-}
-
-.myskillsP2 {
+.mySkills p {
+	margin-top: 20px;
 	line-height: 2;
-	font-size: 14px;
 }
 
 .contact {
-	padding: 50px 0 50px 0;
+	padding: 80px 0 150px 0;
 }
 
 .contact h2 {
 	color: #fff;
+	text-align: center;
+	font-size: 35px;
 }
-
 form {
 	padding: 50px 150px 50px 150px;
 }
@@ -314,7 +354,8 @@ input[type="text"] {
 	box-sizing: border-box;
 	padding: 10px 0 10px 0;
 	border:1px solid #444;
-	background: #fff;
+	background-color: rgba(255, 255, 255, 0.05);
+	border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 textarea {
@@ -325,44 +366,45 @@ textarea {
 	height: 150px;
 	font-size: 16px;
 	margin: auto;
+	background-color: rgba(255, 255, 255, 0.05);
+	border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 input[type="submit"] {
 	margin-top: 20px;
 	font-size: 16px;
-	width: 200px;
+	width: 100%;
+	left: 0;
+	right:0;
 	padding: 15px;
 	border-radius: 5px;
+	background-color: transparent;
+    color: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    margin: 40px auto 0;
 }
 
 
-#contactLink {
-	padding: 0;
+
+footer p {
+	color: #fff;
+	text-align: center;
 }
+
+
+
+
 
 @media only screen and (max-width: 768px) {
 
-	header {
-		padding-top: 60px;
-	}
-
-
 	.subutitle {
 		font-size: 1.7em;
-		padding: 0.75em 0;
 	}
-	.subutitle::before,
-	.subutitle::after {
+	.subtitle:before,
+	.subtitle:after{
 		display: block;
-		width: 80%;
-		margin: 10px auto;
-	}
-	.subutitle:before , .site-title-sub::after {
-		content: '';
-		border-top: 1px;
-		margin: 0 30px;
-		background-color: #fff;
-		vertical-align: middle;
+	    width: 80%;
+	    margin: 10px auto;
 	}
 
 	header {
@@ -374,51 +416,50 @@ input[type="submit"] {
 		flex-direction: column;
 		position: relative;
 	}
-	li img {
-		height: 100px;
+	.label {
 		margin: 0;
-	}
-	section.works {
-		padding-bottom: 387px;
+		width: 300px;
 	}
 
-	.scroll1 {
-		width: 100%;
-		background-repeat: no-repeat;
-		background: url("http://www.shoeisha.com/book/hp/mcoding/3/images/tree.jpg");
-		background-size: cover;
-		position: absolute;
-		top: 0;
+	img,
+	.imgOdd {
 		margin: 0;
-		left: 0;
+		height: 150px;
+		transform: scaleY(-1);
+		opacity: 0.2;
 	}
-	.scroll2 {
-		width: 100%;
-		background-repeat: no-repeat;
-		background: url("http://www.shoeisha.com/book/hp/mcoding/3/images/building.jpg");
-		background-size: cover;
+
+	.works p {
+		height: auto;
+	}
+
+	.works p {
 		position: absolute;
-		top: 184px;
-		left: 0;
-	}
-	.scroll3 {
 		width: 100%;
-		background-repeat: no-repeat;
-		background: url("http://www.shoeisha.com/book/hp/mcoding/3/images/lake.jpg");
-		background-size: cover;
-		position: absolute;
-		top: 368px;
-		left: 0;
+		padding: 10px;
+		top: 4%;
+		left: 34%;
+		z-index: 1;
+		line-height: 2;
+		overflow-y: scroll;
+		box-sizing: border-box;
 	}
-	.scroll4 {
-		width: 100%;
-		background-repeat: no-repeat;
-		background: url("http://www.shoeisha.com/book/hp/mcoding/3/images/sky.jpg");
-		background-size: cover;
+
+	.works .pOdd {
 		position: absolute;
-		top: 552px;
-		left: 0;
+		top: 4%;
+		left: 34%;
+		z-index: 1;
+		padding: 10px;
+		line-height: 2;
 	}
+
+	.works .label {
+		margin: 0 0 0 20px;
+	}
+
+
+
 
 	.mySkills li {
 		margin: 30px 0;
@@ -435,6 +476,21 @@ input[type="submit"] {
 	.contact {
 		background: #000;
 	}
+	input[type=text],textarea {
+		display: block;
+		width: 100%;
+		margin-bottom: 10px;
+		padding: 15px;
+		outline: none;
+		border: 1px solid rgba(255, 255, 255, 0.4);
+		border-radius: 0;
+		background-color: rgba(255, 255, 255, 0.05);
+		color: #fff;
+	}
+
+	.contact {
+		background-color: #000;
+	}
 
 	footer {
 		background: #000;
@@ -443,6 +499,17 @@ input[type="submit"] {
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
