@@ -44,15 +44,15 @@ footer, header, nav, section, details, summary {
 }
 
 address {
-	font-style: normal;
-}
+/*	font-style: normal;
+*/}
 
 
 html {
 }
 html {
-	line-height: 1.7;
-	font-size: 14px;
+/*	line-height: 1.7;
+*/	font-size: 62.5%;
 	-webkit-text-size-adjust: 100%;
 }
 body {
@@ -70,11 +70,11 @@ select {
 }
 h1, h2, h3, h4, h5, h6 {
 	font-size: 100%;
-	font-weight: normal;
-}
+/*	font-weight: normal;
+*/}
 strong, em, small {
-	font-weight: inherit;
-}
+/*	font-weight: inherit;
+*/}
 
 
 
@@ -89,19 +89,23 @@ body {
 	background-position: 0% 50%;
 	background-attachment:fixed;
 	font-family: Raleway;
+	font-size: 1.4rem;
 }
 
 
 header {
 	color: #fff;
-	padding: 130px 30px 80px;
+	padding: 170px 30px 80px;
 	text-align: center;
 }
 
 .subtitle {
-	font-size: 1.4rem;
+	font-size: 2.2rem;
 	text-align: center;
 	color: #fff;
+	font-weight: bold;
+	letter-spacing: 1px;
+	margin: 0 0 30px;
 }
 
 .subtitle:before,
@@ -117,28 +121,31 @@ header {
 
 header h1 {
 	text-align: center;
-	font-size: 70px;
-	margin-top: 30px;
+	font-size: 7.6rem;
+	margin:50px 0 40px;
 }
 
 header p {
 	text-align: center;
 	color: #888;
-	margin-top: 30px;
+	font-size: 1.6rem;
+	margin-bottom: 50px;
+	font-weight: bold;
 }
 
 header a {
-	font-size: 16px;
+	font-size: 1.2rem;
 	border-radius: 5px;
 	display: inline-block;
-	height: 50px;
-	width: 180px;
+	width: 200px;
 	color: #fff;
 	background-color: #afa58d;
 	text-decoration: none;
-	margin: 50px 8px 0 8px;
+	margin: 10px;
 	text-align: center;
-	padding-top: 12px;
+	padding: 20px;
+	letter-spacing: 1px;
+	font-weight: bold;
 }
 
 header > a+a {
@@ -153,22 +160,43 @@ header > a+a {
 
 .about {
 	background-color: #fff;
-	padding: 80px 30px 80px 30px;
+	padding: 80px 30px;
+	text-align: center;
 }
 
-.about h2 {
-	font-size: 35px;
-	text-align: center;
+.about-h2 {
+	position: relative;
+    display: inline-block;
+	margin: 30px 0 15px;
+	padding-bottom: 15px;
+    letter-spacing: 2px;
+    font-size: 4rem;
+}
+.about-h2:before {
+	content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid #999;
+}
+.about-h2:after {
+	content: '';
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    left: 0;
+    border-bottom: 1px solid #999;
 }
 
 .about p {
 	text-align: center;
-	line-height: 3;
+	line-height: 2.5;
+	font-weight: normal;
+	margin: 30px 0;
+	color: #000;
 }
 
-.about > p + p {
-	margin-top: 20px;
-}
 
 
 
@@ -179,11 +207,34 @@ header > a+a {
 .works {
 	background-color: rgb(56,54,52);
 	padding: 80px 0 80px 0;
+	text-align: center;
 }
 .works h2 {
-	text-align: center;
-	font-size: 35px;
-	color: #fff;
+	position: relative;
+    display: inline-block;
+    margin: 30px 0 15px;
+    padding-bottom: 15px;
+    letter-spacing: 2px;
+    font-size: 4rem;
+    color: #fff;
+}
+
+.works-h2:before {
+	content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid #999;
+}
+
+.works-h2:after {
+	content: '';
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    left: 0;
+    border-bottom: 1px solid #999;
 }
 
 .works p {
@@ -303,56 +354,113 @@ img {
 .mySkills {
 	background-color: #fff;
 	text-align: center;
-	padding: 80px 0;
+	padding: 80px 0 90px 0;
 }
 
 .mySkills ul {
+}
+.mySkills-div {
+	margin: 50px auto 0;
 	display: flex;
-	justify-content: center;
-	padding: 40px 0;
+	justify-content: space-around;
+	width: 80%;
+
 }
 .mySkills h2 {
-	font-size: 35px;
+	position: relative;
+    display: inline-block;
+    margin: 30px 0 15px;
+    padding-bottom: 15px;
+    letter-spacing: 2px;
+    font-size: 4rem;
 }
+.mySkills-h2:before {
+	content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid #999;
+}
+
+.mySkills-h2:after {
+	content: '';
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    left: 0;
+    border-bottom: 1px solid #999;
+}
+
 
 .fa-stack {
 	color: #f1b400;
-	font-size: 5rem;
+	font-size: 8rem;
 	border-radius: 50%;
 	width: 150px;
 	height: 150px;
 	border: 4px solid #f1b400;
+	line-height: 142px;
+	margin-bottom: 30px;
 }
 
 .mySkills li {
-	padding: 0 30px 0 30px;
 }
-
-.mySkills p {
-	margin-top: 20px;
+.mySkills-titile {
+	font-size: 2rem;
+	margin: 0 20px 20px;
+}
+.mySkills-p {
 	line-height: 2;
+	color:#000;
+	margin: 0 20px;
 }
 
 .contact {
 	padding: 80px 0 150px 0;
+	text-align: center;
 }
 
 .contact h2 {
-	color: #fff;
-	text-align: center;
-	font-size: 35px;
+	position: relative;
+    display: inline-block;
+    margin: 30px 0 15px;
+    padding-bottom: 15px;
+    letter-spacing: 2px;
+    font-size: 4rem;
+    color: #fff;
 }
+
+.contact-h2:before {
+	content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid #999;
+}
+
+.contact-h2:after {
+	content: '';
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    left: 0;
+    border-bottom: 1px solid #999;
+}
+
+
 form {
-	padding: 50px 150px 50px 150px;
+	width: 50%;
+    margin: 50px auto 0;
 }
 
 input[type="text"] {
 	margin-bottom: 10px;
 	width: 100%;
 	text-align: left;
-	font-size: 16px;
 	box-sizing: border-box;
-	padding: 10px 0 10px 0;
+	padding: 15px;
 	border:1px solid #444;
 	background-color: rgba(255, 255, 255, 0.05);
 	border: 1px solid rgba(255, 255, 255, 0.4);
@@ -364,27 +472,28 @@ textarea {
 	width: 100%;
 	box-sizing: border-box;
 	height: 150px;
-	font-size: 16px;
-	margin: auto;
+	padding: 15px;
 	background-color: rgba(255, 255, 255, 0.05);
 	border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 input[type="submit"] {
-	margin-top: 20px;
-	font-size: 16px;
-	width: 100%;
-	left: 0;
-	right:0;
-	padding: 15px;
-	border-radius: 5px;
-	background-color: transparent;
-    color: rgba(255, 255, 255, 0.6);
-    border: 1px solid rgba(255, 255, 255, 0.4);
+	display: block;
+    width: 200px;
     margin: 40px auto 0;
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    font: inherit;
+    font-weight: bold;
 }
 
-
+footer {
+	padding: 12px;
+}
 
 footer p {
 	color: #fff;
@@ -396,15 +505,36 @@ footer p {
 
 
 @media only screen and (max-width: 768px) {
+	body {
+		font-size: 1.3rem;
+	}
 
-	.subutitle {
-		font-size: 1.7em;
+
+	header {
+		padding-top: 60px;
+	}
+
+	header h1 {
+		margin-top: 35px;
+		font-size: 5rem;
+	}
+
+	.subtitle {
+		font-size: 1.7rem;
 	}
 	.subtitle:before,
 	.subtitle:after{
 		display: block;
 	    width: 80%;
 	    margin: 10px auto;
+	}
+
+	.about h2 {
+		font-size: 2.5rem;
+	}
+	
+	.about p {
+		line-height: 1.8;
 	}
 
 	header {
@@ -457,39 +587,62 @@ footer p {
 	.works .label {
 		margin: 0 0 0 20px;
 	}
+	.mySkills ul {
+		position: relative;
+	}
+	.mySkills-div {
+		flex-direction: column;
+		margin: 30px auto 0;
+	}
 
-
-
+	.mySkills h2 {
+		font-size: 2.5rem;
+		margin-top: 20px;
+	}
 
 	.mySkills li {
-		margin: 30px 0;
+		margin-top: 30px;
 	}
 
 	.fa-stack {
 		color: #f1b400;
-		font-size: 3rem;
+		font-size: 5rem;
 		border-radius: 50%;
 		width: 100px;
 		height: 100px;
 		border: 4px solid #f1b400;
+		line-height: 92px;
+	}
+
+	.mySkills p {
+		line-height: 2;
 	}
 	.contact {
 		background: #000;
+		padding-bottom: 80px;
 	}
+	form {
+		width: 80%;
+	}
+
 	input[type=text],textarea {
 		display: block;
-		width: 100%;
-		margin-bottom: 10px;
-		padding: 15px;
-		outline: none;
-		border: 1px solid rgba(255, 255, 255, 0.4);
-		border-radius: 0;
-		background-color: rgba(255, 255, 255, 0.05);
-		color: #fff;
+	    width: 100%;
+	    margin-bottom: 10px;
+	    padding: 15px;
+	    outline: none;
+	    border: 1px solid rgba(255, 255, 255, 0.4);
+	    border-radius: 0;
+	    background-color: rgba(255, 255, 255, 0.05);
+	    color: #fff;
 	}
 
 	.contact {
 		background-color: #000;
+	}
+	.contact h2 {
+		font-size: 2.5rem;
+		margin-top: 20px;
 	}
 
 	footer {
