@@ -1,0 +1,670 @@
+@charset "utf-8";
+body, div, p,  ul, ol, li, dl, dt, dd, table, th ,td, img, figure,
+h1, h2, h3 ,h4 ,h5, h6, form, select {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+}
+
+
+ul,
+ol		{ list-style: none; }
+
+img		{ border: 0; vertical-align: middle; width: 100%; height: auto; }
+
+
+svg,
+input,
+select,
+textarea,
+label	{ vertical-align: middle; }
+
+
+table	{ border-collapse: collapse; }
+
+
+*,
+*:before,
+*:after {
+	word-break: break-all;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+pre	 {
+	white-space: pre-wrap;
+}
+
+
+main, article, aside, figcaption, figure,
+footer, header, nav, section, details, summary {
+	display: block;
+}
+
+address {
+/*	font-style: normal;
+*/}
+
+
+html {
+}
+html {
+/*	line-height: 1.7;
+*/	font-size: 62.5%;
+	-webkit-text-size-adjust: 100%;
+}
+body {
+	-webkit-font-smoothing: antialiased;
+}
+html, input, select, textarea {
+	color: #212121;
+}
+input, textarea {
+	font-size: 100%;
+}
+select {
+	font-size: 16px;
+	font-size: 1.2rem;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+/*	font-weight: normal;
+*/}
+strong, em, small {
+/*	font-weight: inherit;
+*/}
+
+
+
+
+
+
+
+body {
+	background-image: url("http://www.shoeisha.com/book/hp/mcoding/3/images/bg.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 0% 50%;
+	background-attachment:fixed;
+	font-family: Raleway;
+	font-size: 1.4rem;
+}
+
+
+header {
+	color: #fff;
+	padding: 170px 30px 80px;
+	text-align: center;
+}
+
+.subtitle {
+	font-size: 2.2rem;
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	letter-spacing: 1px;
+	margin: 0 0 30px;
+}
+
+.subtitle:before,
+.subtitle:after {
+	content: '';
+    display: inline-block;
+    width: 140px;
+    height: 2px;
+    margin: 0 30px;
+    background-color: #fff;
+    vertical-align: middle;
+}
+
+header h1 {
+	text-align: center;
+	font-size: 7.6rem;
+	margin:50px 0 40px;
+}
+
+header p {
+	text-align: center;
+	color: #888;
+	font-size: 1.6rem;
+	margin-bottom: 50px;
+	font-weight: bold;
+}
+
+header a {
+	font-size: 1.2rem;
+	border-radius: 5px;
+	display: inline-block;
+	width: 200px;
+	color: #fff;
+	background-color: #afa58d;
+	text-decoration: none;
+	margin: 10px;
+	text-align: center;
+	padding: 20px;
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+
+header > a+a {
+	background-color: #D29E04;
+}
+
+
+
+
+
+
+
+.about {
+	background-color: #fff;
+	padding: 80px 30px;
+	text-align: center;
+}
+
+.about-h2 {
+	position: relative;
+    display: inline-block;
+	margin: 30px 0 15px;
+	padding-bottom: 15px;
+    letter-spacing: 2px;
+    font-size: 4rem;
+}
+.about-h2:before {
+	content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid #999;
+}
+.about-h2:after {
+	content: '';
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    left: 0;
+    border-bottom: 1px solid #999;
+}
+
+.about p {
+	text-align: center;
+	line-height: 2.5;
+	font-weight: normal;
+	margin: 30px 0;
+	color: #000;
+}
+
+
+
+
+
+
+
+
+.works {
+	background-color: rgb(56,54,52);
+	padding: 80px 0 80px 0;
+	text-align: center;
+}
+.works h2 {
+	position: relative;
+    display: inline-block;
+    margin: 30px 0 15px;
+    padding-bottom: 15px;
+    letter-spacing: 2px;
+    font-size: 4rem;
+    color: #fff;
+}
+
+.works-h2:before {
+	content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid #999;
+}
+
+.works-h2:after {
+	content: '';
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    left: 0;
+    border-bottom: 1px solid #999;
+}
+
+.works p {
+	color: #fff;
+}
+
+.works ul {
+	display: flex;
+}
+img {
+	margin: 60% 0 0;
+}
+.imgOdd {
+	margin: 0 0 60%;
+}
+
+.works li {
+	position: relative;
+}
+.works-after-img1:after {
+	content: "";
+	background-image: url(http://www.shoeisha.com/book/hp/mcoding/3/images/tree.jpg);
+	width: 100%;
+	height: 50%;
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: scaleY(-1);
+	opacity: 0.2;
+}
+
+.works-after-img2:after {
+	content: "";
+	background-image: url(http://www.shoeisha.com/book/hp/mcoding/3/images/building.jpg);
+	width: 100%;
+	height: 50%;
+	background-size: cover;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: scaleY(-1);
+	opacity: 0.2;
+}
+.works-after-img3:after {
+	content: "";
+	background-image: url(http://www.shoeisha.com/book/hp/mcoding/3/images/lake.jpg);
+	width: 100%;
+	height: 50%;
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: scaleY(-1);
+	opacity: 0.2;
+}
+.works-after-img4:after {
+	content: "";
+	background-image: url(http://www.shoeisha.com/book/hp/mcoding/3/images/sky.jpg);
+	width: 100%;
+	height: 50%;
+	background-size: cover;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: scaleY(-1);
+	opacity: 0.2;
+}
+
+.works p {
+	position: absolute;
+	width: 100%;
+	padding: 10px;
+	height: 41%;
+	top: 4%;
+	left: 8%;
+	z-index: 1;
+	line-height: 2;
+	overflow-y: scroll;
+	box-sizing: border-box;
+}
+
+.works .pOdd {
+	position: absolute;
+	top: 53%;
+	left: 5%;
+	z-index: 1;
+	padding: 10px;
+	line-height: 2;
+}
+
+.works p a {
+	text-align: center;
+	display: block;
+}
+
+.works .label {
+	margin-top: 20px;
+	width: 150px;
+    border-radius: 4px;
+    background-color: #afa58d;
+    color: #fff;
+    padding: 3px;
+    margin: auto;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 12px;
+    border: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+
+
+
+
+
+.mySkills {
+	background-color: #fff;
+	text-align: center;
+	padding: 80px 0 90px 0;
+}
+
+.mySkills ul {
+}
+.mySkills-div {
+	margin: 50px auto 0;
+	display: flex;
+	justify-content: space-around;
+	width: 80%;
+
+}
+.mySkills h2 {
+	position: relative;
+    display: inline-block;
+    margin: 30px 0 15px;
+    padding-bottom: 15px;
+    letter-spacing: 2px;
+    font-size: 4rem;
+}
+.mySkills-h2:before {
+	content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid #999;
+}
+
+.mySkills-h2:after {
+	content: '';
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    left: 0;
+    border-bottom: 1px solid #999;
+}
+
+
+.fa-stack {
+	color: #f1b400;
+	font-size: 8rem;
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	border: 4px solid #f1b400;
+	line-height: 142px;
+	margin-bottom: 30px;
+}
+
+.mySkills li {
+}
+.mySkills-titile {
+	font-size: 2rem;
+	margin: 0 20px 20px;
+}
+.mySkills-p {
+	line-height: 2;
+	color:#000;
+	margin: 0 20px;
+}
+
+.contact {
+	padding: 80px 0 150px 0;
+	text-align: center;
+}
+
+.contact h2 {
+	position: relative;
+    display: inline-block;
+    margin: 30px 0 15px;
+    padding-bottom: 15px;
+    letter-spacing: 2px;
+    font-size: 4rem;
+    color: #fff;
+}
+
+.contact-h2:before {
+	content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid #999;
+}
+
+.contact-h2:after {
+	content: '';
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    left: 0;
+    border-bottom: 1px solid #999;
+}
+
+
+form {
+	width: 50%;
+    margin: 50px auto 0;
+}
+
+input[type="text"] {
+	margin-bottom: 10px;
+	width: 100%;
+	text-align: left;
+	box-sizing: border-box;
+	padding: 15px;
+	border:1px solid #444;
+	background-color: rgba(255, 255, 255, 0.05);
+	border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+textarea {
+	display: block;
+	text-align: left;
+	width: 100%;
+	box-sizing: border-box;
+	height: 150px;
+	padding: 15px;
+	background-color: rgba(255, 255, 255, 0.05);
+	border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+input[type="submit"] {
+	display: block;
+    width: 200px;
+    margin: 40px auto 0;
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    font: inherit;
+    font-weight: bold;
+}
+
+footer {
+	padding: 12px;
+}
+
+footer p {
+	color: #fff;
+	text-align: center;
+}
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+	body {
+		font-size: 1.3rem;
+	}
+
+
+	header {
+		padding-top: 60px;
+	}
+
+	header h1 {
+		margin-top: 35px;
+		font-size: 5rem;
+	}
+
+	.subtitle {
+		font-size: 1.7rem;
+	}
+	.subtitle:before,
+	.subtitle:after{
+		display: block;
+	    width: 80%;
+	    margin: 10px auto;
+	}
+
+	.about h2 {
+		font-size: 2.5rem;
+	}
+	
+	.about p {
+		line-height: 1.8;
+	}
+
+	header {
+		background: #000;
+	}
+
+
+	ul {
+		flex-direction: column;
+		position: relative;
+	}
+	.label {
+		margin: 0;
+		width: 300px;
+	}
+
+	img,
+	.imgOdd {
+		margin: 0;
+		height: 150px;
+		transform: scaleY(-1);
+		opacity: 0.2;
+	}
+
+	.works p {
+		height: auto;
+	}
+
+	.works p {
+		position: absolute;
+		width: 100%;
+		padding: 10px;
+		top: 4%;
+		left: 34%;
+		z-index: 1;
+		line-height: 2;
+		overflow-y: scroll;
+		box-sizing: border-box;
+	}
+
+	.works .pOdd {
+		position: absolute;
+		top: 4%;
+		left: 34%;
+		z-index: 1;
+		padding: 10px;
+		line-height: 2;
+	}
+
+	.works .label {
+		margin: 0 0 0 20px;
+	}
+	.mySkills ul {
+		position: relative;
+	}
+	.mySkills-div {
+		flex-direction: column;
+		margin: 30px auto 0;
+	}
+
+	.mySkills h2 {
+		font-size: 2.5rem;
+		margin-top: 20px;
+	}
+
+	.mySkills li {
+		margin-top: 30px;
+	}
+
+	.fa-stack {
+		color: #f1b400;
+		font-size: 5rem;
+		border-radius: 50%;
+		width: 100px;
+		height: 100px;
+		border: 4px solid #f1b400;
+		line-height: 92px;
+	}
+
+	.mySkills p {
+		line-height: 2;
+	}
+	.contact {
+		background: #000;
+		padding-bottom: 80px;
+	}
+	form {
+		width: 80%;
+	}
+
+	input[type=text],textarea {
+		display: block;
+	    width: 100%;
+	    margin-bottom: 10px;
+	    padding: 15px;
+	    outline: none;
+	    border: 1px solid rgba(255, 255, 255, 0.4);
+	    border-radius: 0;
+	    background-color: rgba(255, 255, 255, 0.05);
+	    color: #fff;
+	}
+
+	.contact {
+		background-color: #000;
+	}
+	.contact h2 {
+		font-size: 2.5rem;
+		margin-top: 20px;
+	}
+
+	footer {
+		background: #000;
+		color: #fff;
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
